@@ -9,17 +9,17 @@ from datetime import datetime
 import paho.mqtt.client as mqtt
 ledpinRed = 20
 ledpinGreen = 26
-access_key_id='ASIARUVNFN6M2PNHPPXN'
-secret_access_key='SbL1f9bFjZHC7yURzkX3ZueKB9D0RCpddGKocUB1'
-session_token='FwoGZXIvYXdzENT//////////wEaDCDabI8nxFhwJEhbXiLIAQqIHvOBOk001qJbbyyZP6JNIh/3ZCtBUJq/owbJSJ88tx9cxoSD6XoroAO1glQNGmsTzxAue9HeyG2QIYehSCnqvV/U1kyFdUVg/izJsJ/etF4aeXIlo1oHNy2aos1hkJpbyfMpwXRSeHupSxHIQxVJ7/q6KN5InErATTowBo55MAQWX5bZ4kXp4/Qkzdfivuw0WcuQhmm/G0F/gZOXk1z3e9ZjeywiUtSR85bcem0eUPBlk/d+SUhs71VV7HP/37IBY8exxndvKJfp0/IFMi1/c8pnFC+QRJuI99peDqN3ovWdX3TzlsgKDUNyJZQHAKNN1ykx7AuQ0UwIc3Q='
-bucketName='iotjuttukoulu'
+access_key_id='XXXX'
+secret_access_key='XXXX'
+session_token='XXXX'
+bucketName='myBucketti'
 x=20
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 GPIO.setup(ledpinRed, GPIO.OUT)
 GPIO.setup(ledpinGreen, GPIO.OUT)
 eka=True
-MQTT_server="52.45.201.13"
+MQTT_server="X.X.X.X"
 
 def on_connect(client, userdata, flags, rc):
     print("Connected"+str(rc))
